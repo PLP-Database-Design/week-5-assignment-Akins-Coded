@@ -35,7 +35,7 @@ app.get('/providers', (req, res) => {
 })
 
 // Question 3 goes here
-
+// Filter patients by First Name
 app.get('/patient', (req, res) => {
     const getPatients = "SELECT first_name FROM patients"
     db.query(getPatients, (err, data) => {
@@ -50,7 +50,7 @@ app.get('/patient', (req, res) => {
 })
 
 // Question 4 goes here
-
+ // Retrieve all providers by their specialty
 app.get('/providers', (req, res) => {
     const getPatients = "SELECT provider_specialty FROM providers"
     db.query(getPatients, (err, data) => {
